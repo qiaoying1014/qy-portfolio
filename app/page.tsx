@@ -95,25 +95,25 @@ const projectShowcases: ProjectShowcase[] = [
       "Screens from the AMR fleet management mobile app, covering home monitoring, operational statistics, and task tracking flows.",
     screenshots: [
       {
-        src: "/dfleet-app/home/home-collapsed-sheet.png",
+        src: "/dfleet-app/home/home-collapsed-sheet.webp",
         alt: "DFleet mobile app home screen with collapsed AMR details sheet",
         caption: "Home view with collapsed AMR details sheet",
         display: "mobile",
       },
       {
-        src: "/dfleet-app/home/home-expanded-sheet.png",
+        src: "/dfleet-app/home/home-expanded-sheet.webp",
         alt: "DFleet mobile app home screen with expanded AMR details sheet",
         caption: "Home view with expanded AMR details sheet",
         display: "mobile",
       },
       {
-        src: "/dfleet-app/statistics/statistics-1.png",
+        src: "/dfleet-app/statistics/statistics-1.webp",
         alt: "DFleet mobile app statistics overview screen",
         caption: "Statistics",
         display: "mobile",
       },
       {
-        src: "/dfleet-app/task/task.png",
+        src: "/dfleet-app/task/task.webp",
         alt: "DFleet mobile app active task monitoring screen",
         caption: "Active Task monitoring",
         display: "mobile",
@@ -127,19 +127,19 @@ const projectShowcases: ProjectShowcase[] = [
       "Device views showing how the interface adapts across mobile, tablet, and laptop screen sizes.",
     screenshots: [
       {
-        src: "/diamond-golf-zon/mobile.png",
+        src: "/diamond-golf-zon/mobile.webp",
         alt: "Diamond Golf Zon mobile interface",
         caption: "Mobile interface",
         display: "mobile",
       },
       {
-        src: "/diamond-golf-zon/tablet.png",
+        src: "/diamond-golf-zon/tablet.webp",
         alt: "Diamond Golf Zon tablet interface",
         caption: "Tablet interface",
         display: "tablet",
       },
       {
-        src: "/diamond-golf-zon/laptop.png",
+        src: "/diamond-golf-zon/laptop.webp",
         alt: "Diamond Golf Zon laptop interface",
         caption: "Laptop interface",
         display: "desktop",
@@ -153,13 +153,13 @@ const projectShowcases: ProjectShowcase[] = [
       "Admin-focused screens built around the client's CRUD requirements for managing patisserie operations and product content.",
     screenshots: [
       {
-        src: "/han-patisserie/dashboard.png",
+        src: "/han-patisserie/dashboard.webp",
         alt: "Han Patisserie admin dashboard",
         caption: "Admin dashboard",
         display: "desktop",
       },
       {
-        src: "/han-patisserie/flavour-management.png",
+        src: "/han-patisserie/flavour-management.webp",
         alt: "Han Patisserie flavour management CRUD interface",
         caption: "Flavour CRUD management",
         display: "desktop",

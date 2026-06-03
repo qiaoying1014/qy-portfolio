@@ -63,6 +63,7 @@ export function ProjectScreenshotViewer({ screenshots }: ProjectScreenshotViewer
                   src={selectedScreenshot.src}
                   alt={selectedScreenshot.alt}
                   fill
+                  loading="lazy"
                   sizes="(min-width: 1024px) 960px, (min-width: 640px) 80vw, 100vw"
                   className="object-contain p-2"
                 />
@@ -91,6 +92,7 @@ export function ProjectScreenshotViewer({ screenshots }: ProjectScreenshotViewer
                 src={selectedScreenshot.src}
                 alt={selectedScreenshot.alt}
                 fill
+                loading="lazy"
                 sizes="100vw"
                 className="object-contain"
               />
@@ -129,6 +131,7 @@ export function ProjectScreenshotViewer({ screenshots }: ProjectScreenshotViewer
                     src={screenshot.src}
                     alt=""
                     fill
+                    loading="lazy"
                     sizes="160px"
                     className="object-contain"
                   />
