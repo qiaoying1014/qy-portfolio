@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { JourneyRoadmap } from "./components/JourneyRoadmap";
+import { ProjectShowcaseTabs, type ProjectShowcase } from "./components/ProjectShowcaseTabs";
 
 const journey = [
   {
@@ -82,6 +83,87 @@ const projects = [
       "Bootstrap",
       "ASP.NET Core Identity",
       "Razor Pages / Razor Views",
+    ],
+  },
+];
+
+const projectShowcases: ProjectShowcase[] = [
+  {
+    name: "DFleet Mobile App",
+    focus: "Core mobile app functionality",
+    description:
+      "Screens from the AMR fleet management mobile app, covering home monitoring, operational statistics, and task tracking flows.",
+    screenshots: [
+      {
+        src: "/dfleet-app/home/home-collapsed-sheet.png",
+        alt: "DFleet mobile app home screen with collapsed AMR details sheet",
+        caption: "Home view with collapsed AMR details sheet",
+        display: "mobile",
+      },
+      {
+        src: "/dfleet-app/home/home-expanded-sheet.png",
+        alt: "DFleet mobile app home screen with expanded AMR details sheet",
+        caption: "Home view with expanded AMR details sheet",
+        display: "mobile",
+      },
+      {
+        src: "/dfleet-app/statistics/statistics-1.png",
+        alt: "DFleet mobile app statistics overview screen",
+        caption: "Statistics",
+        display: "mobile",
+      },
+      {
+        src: "/dfleet-app/task/task.png",
+        alt: "DFleet mobile app active task monitoring screen",
+        caption: "Active Task monitoring",
+        display: "mobile",
+      },
+    ],
+  },
+  {
+    name: "Diamond Golf Zon",
+    focus: "Responsive interface design",
+    description:
+      "Device views showing how the interface adapts across mobile, tablet, and laptop screen sizes.",
+    screenshots: [
+      {
+        src: "/diamond-golf-zon/mobile.png",
+        alt: "Diamond Golf Zon mobile interface",
+        caption: "Mobile interface",
+        display: "mobile",
+      },
+      {
+        src: "/diamond-golf-zon/tablet.png",
+        alt: "Diamond Golf Zon tablet interface",
+        caption: "Tablet interface",
+        display: "tablet",
+      },
+      {
+        src: "/diamond-golf-zon/laptop.png",
+        alt: "Diamond Golf Zon laptop interface",
+        caption: "Laptop interface",
+        display: "desktop",
+      },
+    ],
+  },
+  {
+    name: "Han Patisserie",
+    focus: "Client admin CRUD workflow",
+    description:
+      "Admin-focused screens built around the client's CRUD requirements for managing patisserie operations and product content.",
+    screenshots: [
+      {
+        src: "/han-patisserie/dashboard.png",
+        alt: "Han Patisserie admin dashboard",
+        caption: "Admin dashboard",
+        display: "desktop",
+      },
+      {
+        src: "/han-patisserie/flavour-management.png",
+        alt: "Han Patisserie flavour management CRUD interface",
+        caption: "Flavour CRUD management",
+        display: "desktop",
+      },
     ],
   },
 ];
@@ -185,13 +267,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="reveal profile-card relative mx-auto w-full max-w-[345px]">
+        <div className="reveal profile-card relative mx-auto w-full max-w-86.25">
           <div
-            className="absolute left-1/2 top-[-18px] z-10 h-10 w-28 -translate-x-1/2 rotate-[-3deg] border border-zinc-300 bg-white/80 shadow-[0_6px_18px_rgba(0,0,0,0.08)] backdrop-blur-sm"
+            className="absolute left-1/2 -top-4.5 z-10 h-10 w-28 -translate-x-1/2 -rotate-3 border border-zinc-300 bg-white/80 shadow-[0_6px_18px_rgba(0,0,0,0.08)] backdrop-blur-sm"
             aria-hidden="true"
           />
           <div className="relative rounded-sm border border-zinc-950 bg-white p-3 shadow-[12px_12px_0_#111111]">
-            <div className="relative aspect-[4/5] overflow-hidden border border-zinc-950 bg-zinc-100">
+            <div className="relative aspect-4/5 overflow-hidden border border-zinc-950 bg-zinc-100">
               <Image
                 src="/qiaoying.jpg"
                 alt="Portrait of Wong Qiao Ying"
@@ -251,6 +333,21 @@ export default function Home() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section
+        id="project-screenshots"
+        className="border-t border-zinc-200 px-6 py-20 sm:px-10 lg:px-16"
+      >
+        <div className="mx-auto max-w-7xl">
+          <p className="text-sm font-medium uppercase tracking-[0.28em] text-zinc-500">
+            Project Screenshots
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
+            A closer look at selected project interfaces.
+          </h2>
+          <ProjectShowcaseTabs projects={projectShowcases} />
         </div>
       </section>
 
